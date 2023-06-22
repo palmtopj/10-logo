@@ -5,40 +5,26 @@ const fs = require('fs');
 // array of questions for user input
 const questions = [
     {
-        message: "What is the title of your project?",
-        name: "title",
+        message: "Enter up to three characters",
+        name: "text",
         type: "input"
     },
     {
-        message: "What is the description of your project?",
-        name: "description",
+        message: "Enter a color keyword (OR a hexadecimal number)",
+        name: "textColor",
         type: "input"
     },
     {
-        message: "What are the installation instructions?",
-        name: "installation",
-        type: "input"
+        message: "Select a shape",
+        name: "shape",
+        type: "list",
+        choices: ["circle", "triangle", "square"]
     },
     {
-        message: "What are the contributions?",
-        name: "contributions",
+        message: "Enter a shape color?",
+        name: "shapeColor",
         type: "input"
-    },
-    {
-        message: "What is left todo?",
-        name: "todo",
-        type: "input"
-    },
-    {
-        message: "GitHub username?",
-        name: "github",
-        type: "input"
-    },
-    {
-        message: "Email?",
-        name: "email",
-        type: "input"
-    },
+    }
 ];
 
 // Create a function to write README file
